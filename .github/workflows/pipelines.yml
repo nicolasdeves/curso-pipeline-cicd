@@ -15,7 +15,7 @@ jobs:
           tar -cvzf build-files.tar.gz index.html
 
       - name: Copiar arquivo para servidor
-        uses: appleboy/scp-actions@v0.1.4
+        uses: appleboy/scp-action@v0.1.4
         with: 
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
